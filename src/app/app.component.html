@@ -14,26 +14,27 @@
     <li>Single Slot Content Projection can be achieved only by using the ng-content tag.</li>
     <li>Multi Slot Content Projection Can be achieved by using the selector pattern</li>
     <li>Contents that already projected by using <em>Multi Slot Content </em>
-    projection Will not be projected on <em>Single Slot Content</em> Projection.</li>
+      projection Will not be projected on <em>Single Slot Content</em> Projection.
+    </li>
   </ul>
 </div>
 
 <h2>@ContentChild Decorator</h2>
 <p>@ContentChild Decorator is used to access the reference of DOM Element or
-a Component or Directive from the projected content into child component class.</p>
+  a Component or Directive from the projected content into child component class.</p>
 
 <ul>
   <li>Content inside the Parent Component's
-    ng-content is can be simply accessed by using a view child decorator.</li>
+    ng-content is can be simply accessed by using a view child decorator.
+  </li>
   <li>@ContentChild Decorator Can't be used to access the parent components elements</li>
 </ul>
 
 <app-child>
-  <p>Projecting the Child Components Data from the Parent Component</p>
-  <p #childTempRef>Child content with Template Reference</p>
-<!-- <- Template as the selector is not applicable for select statement in ngTemplate-->
-  <p class="p3">Child Content with class name P#</p>
+  <p>Projecting the Child Components Data from the Parent Component of {{ title }}</p>
+  <p class="p3">Child Content with class name P3</p>
   <p p4>Child Content with custom attribute p4</p>
-
+  <p #childTempRef>Child content with Template Reference</p>
+  <!-- <- Template as the selector is not applicable for select statement in ngTemplate-->
   <app-grand-child></app-grand-child>
 </app-child>

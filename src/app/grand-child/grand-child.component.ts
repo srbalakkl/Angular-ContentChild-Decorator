@@ -1,5 +1,4 @@
-import {AfterContentChecked, AfterViewInit, Component, ContentChild, OnInit, ViewChild} from '@angular/core';
-import {logMessages} from "@angular-devkit/build-angular/src/builders/browser-esbuild/esbuild";
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-grand-child',
@@ -7,11 +6,9 @@ import {logMessages} from "@angular-devkit/build-angular/src/builders/browser-es
   styleUrls: ['./grand-child.component.css']
 })
 export class GrandChildComponent implements OnInit {
-  name = "I'm your grand Grand Child"
-  ngOnInit(): void {
-  }
+  name = "I'm your Grand Child"
 
-  ngAfterViewInit() {
+  ngOnInit(): void {
   }
 
 
