@@ -13,7 +13,7 @@ export class ChildComponent implements OnInit{
   ngOnInit() {
     console.log('The project content value ==',this.paraElement.nativeElement.innerText)
     console.log('The project content value ==',this.paraElement)
-    console.log('Gc element',this.gcElement);
+    console.log('Gc element',this.gcElement.name + ' --- From parent component (child component)');
   }
 
 }

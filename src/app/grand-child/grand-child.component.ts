@@ -9,6 +9,7 @@ export class GrandChildComponent implements OnInit {
   name = "I'm your Grand Child"
 
   ngOnInit(): void {
+    this.name = 'dummy to test'//<- This won't work.
   }
 
 
