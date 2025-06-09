@@ -36,8 +36,12 @@
 <!--  Multi slot content projection-->
   <p class="p3">Child Content with class name P3</p>
   <p p4>Child Content with custom attribute p4</p>
-  <p #childTempRef>Child content with Template Reference</p>
+  <p #childTempRef>Child content with Template Reference.</p>
+  <p #childTempRef>Another Child content with Template Reference.</p>
 
   <!-- <- Template as the selector is not applicable for select statement in ngTemplate-->
+  <app-grand-child></app-grand-child>
+  <app-grand-child></app-grand-child>
+  <app-grand-child></app-grand-child>
   <app-grand-child></app-grand-child>
 </app-child>
